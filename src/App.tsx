@@ -1,13 +1,13 @@
-import styled from "styled-components";
-import Body from "./components/Body";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
+import styled from 'styled-components';
+import Body from './components/Body';
+import Footer from './components/Footer';
+import Header from './components/Header';
 
 const Page = styled.div`
-  width: 1130px;
-  height: 100vh;
-  border: 1px solid #eee;
-  margin: auto;
+    width: 1130px;
+    height: 100vh;
+    border: 1px solid #eee;
+    margin: auto;
 `;
 
 const Nav = styled.div`
@@ -22,16 +22,16 @@ const Nav = styled.div`
 `;
 
 function App() {
-  return (
-    <div className="App">
-      <Page>
-        <Header />
-        <Nav />
-        <Body />
-        <Footer />
-      </Page>
-    </div>
-  )
+    return (
+        <div className="App">
+            <Page>
+                <Header />
+                <Nav />
+                <Body />
+                <Footer />
+            </Page>
+        </div>
+    );
 }
 
 export default App;

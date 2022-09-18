@@ -23,7 +23,7 @@ const HeadContent = styled.div`
     }
     img {
         vertical-align: middle;
-        margin-left: -10px;
+        margin-left: -17px;
     }
 `;
 
@@ -37,6 +37,12 @@ const SearchIcon = styled.div`
     height: 100%;
     background-color: #19ce60;
     float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+        padding-left: 17px;
+    }
 `;
 
 const SearchInput = styled.input`
@@ -82,7 +88,14 @@ function Header() {
                 <SearchForm>
                     <SearchInput />
                     <SearchBox>
-                        <SearchIcon />
+                        <SearchIcon>
+                            <img
+                                src="./images/search.png"
+                                width="25px"
+                                height="25px"
+                                alt="search"
+                            />
+                        </SearchIcon>
                     </SearchBox>
                 </SearchForm>
             </HeadContent>

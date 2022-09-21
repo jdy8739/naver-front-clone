@@ -10,11 +10,10 @@ const Content = styled.div`
 
 const ContentTop = styled.div`
     width: 100%;
-    height: 207px;
+    height: 196px;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: stretch;
-    flex-wrap: wrap;
 `;
 
 const AdPicture = styled.div`
@@ -44,6 +43,7 @@ const LoginButton = styled.div`
 const NewsTitlePreview = styled(LoginBox)`
     width: 751px;
     height: 47px;
+    border: 1px solid #eee;
 `;
 
 const IssuesAndLive = styled(AdPicture)`
@@ -51,33 +51,35 @@ const IssuesAndLive = styled(AdPicture)`
     height: 47px;
 `;
 
-const RightBox = styled.div`
+const RightCol = styled.div`
     width: 751px;
     height: 2546px;
-    background-color: blue;
 `;
 
-const LeftBox = styled.div`
+const LeftCol = styled.div`
     width: 348px;
     height: 2546px;
-    background-color: red;
 `;
 
 function Body() {
     return (
         <Content>
-            <RightBox></RightBox>
-            <LeftBox></LeftBox>
-            {/* <ContentTop>
-                <AdPicture></AdPicture>
-                <LoginBox>
-                    <div></div>
-                    <LoginButton></LoginButton>
-                    <div></div>
-                </LoginBox>
-                <NewsTitlePreview></NewsTitlePreview>
-                <IssuesAndLive></IssuesAndLive>
-            </ContentTop> */}
+            <RightCol>
+                <ContentTop>
+                    <AdPicture></AdPicture>
+                    <NewsTitlePreview></NewsTitlePreview>
+                </ContentTop>
+            </RightCol>
+            <LeftCol>
+                <ContentTop>
+                    <LoginBox>
+                        <div></div>
+                        <LoginButton></LoginButton>
+                        <div></div>
+                    </LoginBox>
+                    <IssuesAndLive></IssuesAndLive>
+                </ContentTop>
+            </LeftCol>
         </Content>
     );
 }

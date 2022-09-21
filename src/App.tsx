@@ -11,7 +11,7 @@ const Page = styled.div`
 `;
 
 const Nav = styled.div`
-    width: 100vw;
+    width: 99vw;
     height: 53px;
     border-top: 1px solid #e9e9e9;
     box-shadow: 0px 2px 5px #85858533;
@@ -26,7 +26,7 @@ function App() {
         <div className="App">
             <Page>
                 <Header />
-                {/* <Nav /> */}
+                <Nav />
                 <Body />
                 <Footer />
             </Page>

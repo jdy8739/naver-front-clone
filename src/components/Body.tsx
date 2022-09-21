@@ -4,6 +4,8 @@ const Content = styled.div`
     width: 100%;
     height: 2594px;
     padding: 72px 0 27px 0;
+    display: flex;
+    justify-content: space-between;
 `;
 
 const ContentTop = styled.div`
@@ -49,10 +51,24 @@ const IssuesAndLive = styled(AdPicture)`
     height: 47px;
 `;
 
+const RightBox = styled.div`
+    width: 751px;
+    height: 2546px;
+    background-color: blue;
+`;
+
+const LeftBox = styled.div`
+    width: 348px;
+    height: 2546px;
+    background-color: red;
+`;
+
 function Body() {
     return (
         <Content>
-            <ContentTop>
+            <RightBox></RightBox>
+            <LeftBox></LeftBox>
+            {/* <ContentTop>
                 <AdPicture></AdPicture>
                 <LoginBox>
                     <div></div>
@@ -61,7 +77,7 @@ function Body() {
                 </LoginBox>
                 <NewsTitlePreview></NewsTitlePreview>
                 <IssuesAndLive></IssuesAndLive>
-            </ContentTop>
+            </ContentTop> */}
         </Content>
     );
 }

@@ -5,7 +5,7 @@ import Header from './components/Header';
 
 const Page = styled.div`
     width: 1130px;
-    height: 100vh;
+    height: 3231px;
     border: 1px solid #eee;
     margin: auto;
 `;
@@ -26,7 +26,7 @@ function App() {
         <div className="App">
             <Page>
                 <Header />
-                <Nav />
+                {/* <Nav /> */}
                 <Body />
                 <Footer />
             </Page>

@@ -7,6 +7,7 @@ const FooterSection = styled.div`
     border: 1px solid #e4e4e4;
     position: absolute;
     right: 0;
+    bottom: 0;
 `;
 
 function Footer() {
